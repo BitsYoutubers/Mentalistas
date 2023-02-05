@@ -1,10 +1,48 @@
-<div class="container">
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imersão Dev - Aula 02</title>
+  
+  <!--Links de estilização da página-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="http://lh4.ggpht.com/-kI0VPIwkdM4/T9CxwPtz3fI/AAAAAAAAAe8/5L0JMQesZoY/question%252520block%252520nintendo%252520blast%252520%2525283%252529_thumb%25255B3%25255D.png?imgmax=800" rel="stylesheet">
+ </head>
+
+<body>
+    <!--Título-->
+  <div class="container">
     <h1 class="page-title">
       Mentalista
     </h1>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-  </div>
+      <div>
+          <h3>Descubra o número secreto</h3><br>
+          <img id="caixa-secreta" src= "http://lh4.ggpht.com/-kI0VPIwkdM4/T9CxwPtz3fI/AAAAAAAAAe8/5L0JMQesZoY/question%252520block%252520nintendo%252520blast%252520%2525283%252529_thumb%25255B3%25255D.png?imgmax=800">
+        <h2> Digite um número de 0 a 1000. Você tem 10 tentativas!</h2>
+       </div>
+         <!--Input para inserir o chute-->
+        <div id="digiteChute">
+            <input type="text" id="chuteNumero" placeholder="Digite um número">
+          
+            <!--Botão de verificar-->
+            <input type="submit" id="botao" value="Tentar" onclick="verificar()">
+          
+            <!--Impressão do Resultado-->
+            <div id="resultado"></div><br><br>
+        </div>
+    </div>
+    
+    
   <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Ilustra%C3%A7%C3%A3o-c%C3%A9rebro+1.png">
   </a>
+  
+   <!--JS-->
+    <script src="script.js"></script> 
+  
+  
+</body>
+</html>
